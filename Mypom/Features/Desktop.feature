@@ -28,7 +28,7 @@ Feature: Desktops testing
     Then All desktops are displayed
   
   @desktops
-  	Scenario Outline: I want to be able add Desktops to my cart
+  	Scenario Outline: I want to be able click on Desktop and go to desktopproduct
   	Given User opens opencart
   	Then Desktops tab should be displayed
   	When User clicks on Show all Desktops
