@@ -1,5 +1,6 @@
 package crm.stepdefinitions;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import io.restassured.RestAssured;
@@ -15,6 +16,8 @@ public class restassured_test {
 		System.out.println("The reponse is "+response.getStatusCode());
 		System.out.println("The time is "+response.getTime());
 		System.out.println("body "+response.getBody().asString());
+		System.out.println("content type " +response.getContentType());
+		Assert.assertEquals(response.getStatusCode(), 200);
 	}
 
 }
